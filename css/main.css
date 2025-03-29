@@ -19,6 +19,12 @@ header {
     width: 100%;
     background-color: var(--mainColor);
 
+    .header-img {
+        display: none;
+        border-radius: 100px;
+        width: 100%;
+    }
+
     #heading-wrapper {
         margin: auto;
         display: flex;
@@ -83,10 +89,9 @@ main {
     flex-direction: column;
 
     #new-release-section {
-        display: flex;
-        flex-direction: column;
         text-align: center;
         align-items: center;
+        gap: 0;
         background-color: var(--secondaryColor);
         padding: 0.4rem 1rem 0.4rem 1rem;
 
@@ -94,6 +99,7 @@ main {
             padding: 0.3rem 1.8rem 0.3rem 1.8rem;
             background-color: var(--brownColor);
             border-radius: 10px;
+            margin: 0 1.5rem 1rem;
             color: var(--whiteColor);
             font-weight: 400;
             margin-bottom: 1rem;
