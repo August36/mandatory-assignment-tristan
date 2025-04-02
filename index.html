@@ -13,11 +13,6 @@
 </head>
 
 
-<!-- todo:
- -To top links should be buttons not anchor because they dont take us out of the page. So i neeed to add javascript for that i guess
- - DRY - see if you can minimize the styles for fx the article tag elements
-- Fix semantic - få styr på fx dd/dl/dt, h1-h5 og om article er brugt korrekt.-->
-
 <body>
     <header>
         <div id="heading-wrapper">
@@ -35,10 +30,10 @@
 
         </div>
         <nav>
-            <button>Home</button>
-            <button>On Tour</button>
-            <button>Books</button>
-            <button>Contact</button>
+            <a href="#heading-wrapper">Home</a>
+            <a href="#conference-container">On Tour</a>
+            <a href="#books-container">Books</a>
+            <a href="#contact-container">Contact</a>
         </nav>
     </header>
     <main>
@@ -85,7 +80,7 @@
                         and adapt to the ever-evolving digital landscape.
                     </p>
                 </div>
-                <div class="bio-right-column">
+                <div class="bio-first-book-column">
                     <article class="book-card">
                         <div class="img-container"><img src="img/book_css.png" alt="book_css"></div>
                             <div>
@@ -101,13 +96,32 @@
                             </div>
                     </article>
                 </div>
+                <div class="bio-second-book-column">
+                    <article class="book-card">
+                        <div class="img-container"><img src="img/book_html.png" alt="book_css"></div>
+                            <div>
+                                <h4>Semantic HTML</h4>
+                                <h5>Foundation of the Web <span>&#40;2019&#41;</span></h5>
+                            </div>
+                    </article>
+                    <article class="book-card">
+                        <div class="img-container"><img src="img/book_programming.png" alt="book_js_advanced"></div>
+                            <div>
+                                <h4>Basic programming</h4>
+                                <h5>Algorithms and Beyond<span>&#40;2017&#41;</span></h5>
+                            </div>
+                    </article>
+                </div>
             </bio-container-wrapper>
         </section>
         <header class="banner">
             <h3>On tour</h3>
         </header>
+        <picture>
+            <source srcset="img/tristan_1280.jpg" media="(min-width: 1024px)">
+            <img src="img/tristan_1280.jpg" alt="Conference">
+          </picture>
         <section id="conference-container">
-            <img src="img/tristan_640.jpg" alt="Conference">
 
             <dl>
                 <dd><img src="img/microphone.png" alt="Microphone icon">2023, December 6-8</dd>
